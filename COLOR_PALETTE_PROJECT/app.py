@@ -46,7 +46,9 @@ def get_colors(msg):
 
 
 app = Flask(__name__, 
-            template_folder='templates')
+            template_folder='templates', 
+            static_url_path='',
+            static_folder='static')
 
 @app.route("/palette", methods=["POST"])
 def promt_to_palette():
